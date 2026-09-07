@@ -56,7 +56,6 @@ export default function Navbar() {
                 >
                   {link.label}
 
-                  {/* Small underline */}
                   <span className="absolute bottom-0 left-0 h-px w-0 bg-[#24231f] transition-all duration-300 group-hover:w-full" />
                 </a>
               ))}
@@ -163,7 +162,6 @@ export default function Navbar() {
 
                 </div>
 
-                {/* Mobile contact */}
                 <div className="mt-6">
 
                   <a

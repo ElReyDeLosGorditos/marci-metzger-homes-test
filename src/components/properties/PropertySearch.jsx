@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 
 const ease = [0.16, 1, 0.3, 1];
 
-// Custom styled select with minimalist inline SVG arrow
 const selectClass =
   "mt-3 w-full appearance-none border-b border-[#171715]/20 bg-transparent pb-3 pr-6 font-sans text-sm text-[#171715] outline-none transition-colors duration-300 focus:border-[#171715] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] bg-[length:10px_6px] bg-[right_4px_center] bg-no-repeat [background-image:url('data:image/svg+xml;utf8,<svg%20xmlns=\"http://www.w3.org/2000/svg\"%20width=\"10\"%20height=\"6\"%20viewBox=\"0%200%2010%206\"><path%20fill=\"none\"%20stroke=\"%23171715\"%20stroke-width=\"1.5\"%20d=\"M1%201l4%204%204-4\"/></svg>')]";
 
@@ -50,7 +49,6 @@ export default function PropertySearch() {
           transition={{ duration: 0.9, ease }}
           className="mt-16 border-y border-[#171715]/20"
         >
-          {/* Row 1: Location / Type / Sort */}
           <div className="grid lg:grid-cols-12">
             <div className="border-b border-[#171715]/15 px-1 py-7 lg:col-span-5 lg:border-b-0 lg:border-r lg:px-8">
               <label
@@ -158,7 +156,6 @@ export default function PropertySearch() {
             </div>
           </div>
 
-          {/* Row 2: Numerical Filters (Structured 4-Column Grid) */}
           <div className="grid border-t border-[#171715]/15 sm:grid-cols-2 lg:grid-cols-4">
             <div className="border-b border-[#171715]/15 px-1 py-7 sm:border-r lg:border-b-0 lg:px-8">
               <label
@@ -239,7 +236,6 @@ export default function PropertySearch() {
             </div>
           </div>
 
-          {/* Row 3: Call to Action */}
           <div className="flex flex-col items-start justify-between gap-6 border-t border-[#171715]/15 px-1 py-7 sm:flex-row sm:items-center lg:px-8">
             <p className="max-w-md font-sans text-xs leading-relaxed text-[#171715]/45">
               Looking for something specific? Marci can help narrow down the
@@ -258,7 +254,6 @@ export default function PropertySearch() {
           </div>
         </motion.div>
 
-        {/* Footer Info Feature Grid */}
         <div className="mt-10 grid gap-8 md:grid-cols-3">
           <Info
             number="01"

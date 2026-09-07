@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import SellerHero from "../../assets/caro1.png"; // Or your preferred seller image
-import BuyerHero from "../../assets/caro2.png";  // Or your preferred buyer image
+import SellerHero from "../../assets/caro1.png";
+import BuyerHero from "../../assets/caro2.png";
 
 const ease = [0.16, 1, 0.3, 1];
 

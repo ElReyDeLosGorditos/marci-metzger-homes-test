@@ -25,12 +25,10 @@ export default function PhotoStory() {
   const [activeIndex, setActiveIndex] = useState(0);
   const timerRef = useRef(null);
 
-  // Function to advance to the next image
   const nextSlide = useCallback(() => {
     setActiveIndex((prev) => (prev + 1) % storyItems.length);
   }, []);
 
-  // Function to start or reset the 4-second auto-play timer
   const startTimer = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => {
@@ -38,7 +36,6 @@ export default function PhotoStory() {
     }, 4000);
   }, [nextSlide]);
 
-  // Start interval on mount & cleanup on unmount
   useEffect(() => {
     startTimer();
     return () => {
@@ -46,7 +43,6 @@ export default function PhotoStory() {
     };
   }, [startTimer]);
 
-  // Handle user interactions: triggers slide change AND resets the 4s delay timer
   const handleUserSelect = (index) => {
     setActiveIndex(index);
     startTimer();
@@ -107,7 +103,6 @@ export default function PhotoStory() {
       <div className="mx-auto max-w-[1500px] px-6 py-12 sm:px-10 lg:px-14 lg:py-16">
         <div className="grid gap-8 border-y border-[#171715]/15 py-8 lg:grid-cols-12 lg:items-stretch">
           
-          {/* Main Stage Image Display */}
           <div className="relative aspect-[16/10] overflow-hidden bg-[#e5dfd3] lg:col-span-8">
             <AnimatePresence mode="wait">
               <motion.img
@@ -122,7 +117,6 @@ export default function PhotoStory() {
               />
             </AnimatePresence>
 
-            {/* Overlaid Image Counter Tag */}
             <div className="absolute left-6 top-6 bg-[#171715] px-3.5 py-1.5 font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-[#f5f1e8]">
               {activeItem.num} / 07
             </div>
@@ -145,7 +139,6 @@ export default function PhotoStory() {
               </p>
             </div>
 
-            {/* Controls */}
             <div className="mt-8 flex items-center justify-between">
               <div className="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-[#171715]/45">
                 Select Photo
@@ -173,7 +166,6 @@ export default function PhotoStory() {
         </div>
       </div>
 
-      {/* Horizontal Strip Selector */}
       <div className="mx-auto max-w-[1500px] px-6 pb-20 sm:px-10 lg:px-14 lg:pb-28">
         <div className="mb-4 flex items-center justify-between">
           <p className="font-sans text-[10px] font-bold uppercase tracking-[0.25em] text-[#171715]/45">
@@ -222,7 +214,6 @@ export default function PhotoStory() {
         </div>
       </div>
 
-      {/* Footer Line Divider */}
       <div className="border-t border-[#171715]/15">
         <div className="mx-auto flex max-w-[1500px] items-center justify-between px-6 py-6 sm:px-10 lg:px-14">
           <span className="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-[#171715]/45">

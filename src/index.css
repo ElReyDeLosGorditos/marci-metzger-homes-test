@@ -1,11 +1,8 @@
 @import "./styles/fonts.css";
 @import "tailwindcss";
 
-/* 1. Register custom font families in Tailwind v4 */
 @theme {
-  /* Strong, architectural heading font */
   --font-serif: "Space Grotesk", sans-serif; 
-  /* Ultra-readable, modern body & UI font */
   --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
 }
 
@@ -34,7 +31,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Optional: Default serif styles for headers */
 h1, h2, h3, h4 {
   font-family: var(--font-serif);
 }

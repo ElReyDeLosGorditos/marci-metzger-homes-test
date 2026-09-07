@@ -66,7 +66,6 @@ export default function Contact() {
 
         {/* Main Content Layout */}
         <div className="mt-20 grid gap-16 border-t border-[#171715]/15 pt-16 lg:grid-cols-12">
-          {/* Contact Details Column */}
           <div className="flex flex-col justify-between lg:col-span-5">
             <div>
               <p className="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-[#171715]/40">
@@ -76,7 +75,6 @@ export default function Contact() {
                 The Ridge Realty Group
               </p>
 
-              {/* Tap to Call */}
               <a
                 href="tel:2069196886"
                 className="group mt-12 block border-t border-[#171715]/15 pt-6 transition-colors"
@@ -95,7 +93,6 @@ export default function Contact() {
                 </p>
               </a>
 
-              {/* Office Location */}
               <div className="mt-10 border-t border-[#171715]/15 pt-6">
                 <div className="flex items-center justify-between">
                   <p className="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-[#171715]/40">
@@ -118,7 +115,6 @@ export default function Contact() {
                 </address>
               </div>
 
-              {/* Office Hours */}
               <div className="mt-10 border-t border-[#171715]/15 pt-6">
                 <p className="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-[#171715]/40">
                   Office Availability
@@ -134,7 +130,6 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Social Channels with Icon Buttons */}
               <div className="mt-10 border-t border-[#171715]/15 pt-6">
                 <p className="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-[#171715]/40">
                   Connect & Reviews
@@ -168,7 +163,6 @@ export default function Contact() {
             </p>
 
             <form onSubmit={(e) => e.preventDefault()} className="mt-8">
-              {/* Inquiry Type Selector */}
               <div className="mb-8">
                 <p className="mb-3 font-sans text-[10px] font-bold uppercase tracking-[0.15em] text-[#171715]/50">
                   I am looking to:
@@ -266,7 +260,6 @@ export default function Contact() {
                 />
               </div>
 
-              {/* Submit Button */}
               <div className="mt-10 flex items-center justify-between">
                 <button
                   type="submit"
@@ -279,7 +272,6 @@ export default function Contact() {
                 </button>
               </div>
 
-              {/* ReCAPTCHA */}
               <p className="mt-8 font-sans text-[10px] leading-relaxed text-[#171715]/40">
                 This site is protected by reCAPTCHA and the Google{" "}
                 <a

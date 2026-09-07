@@ -9,7 +9,6 @@ export default function Hero() {
       id="top"
       className="relative min-h-screen overflow-hidden bg-[#171715] text-white flex flex-col justify-between"
     >
-      {/* 1. Dynamic Background Image */}
       <motion.div
         initial={{ scale: 1.1, opacity: 0.8 }}
         animate={{ scale: 1, opacity: 1 }}
@@ -21,12 +20,10 @@ export default function Hero() {
           alt="Pahrump Nevada Real Estate"
           className="h-full w-full object-cover object-center"
         />
-        {/* Layered Vignette and Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#171715] via-black/40 to-black/20" />
         <div className="absolute inset-0 bg-black/20" />
       </motion.div>
 
-      {/* 2. Architectural Blueprint Overlay Lines */}
       <div className="pointer-events-none absolute inset-0 z-10 mx-auto max-w-[1500px] border-x border-white/10 hidden md:block">
         <div className="absolute left-1/3 top-0 h-full w-px bg-white/5" />
         <div className="absolute left-2/3 top-0 h-full w-px bg-white/5" />
@@ -49,7 +46,6 @@ export default function Hero() {
 
         {/* Main Headline Block */}
         <div className="relative">
-          {/* Subtle Background Watermark */}
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.08 }}
@@ -78,7 +74,6 @@ export default function Hero() {
         {/* Lower Grid Row */}
         <div className="mt-10 grid gap-8 border-t border-white/20 pt-8 md:grid-cols-12 md:items-end">
           
-          {/* Left Block: Broker Name & Agency */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -114,7 +109,6 @@ export default function Hero() {
             </a>
           </motion.div>
 
-          {/* Right Block: Pure Brand Focus Widget */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -138,7 +132,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* 4. Scroll Indicator */}
       <div className="relative z-20 border-t border-white/10 bg-black/40 backdrop-blur-md px-6 py-3 sm:px-10 lg:px-14">
         <div className="mx-auto flex max-w-[1500px] items-center justify-between font-sans text-[10px] uppercase tracking-[0.2em] text-white/50">
           <span>Scroll to explore portfolio</span>

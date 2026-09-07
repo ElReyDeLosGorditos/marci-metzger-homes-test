@@ -38,7 +38,6 @@ export default function Location() {
         {/* Main grid */}
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
 
-          {/* Address */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -108,10 +107,8 @@ export default function Location() {
               referrerPolicy="no-referrer-when-downgrade"
             />
 
-            {/* Map frame */}
             <div className="pointer-events-none absolute inset-0 border border-white/15" />
 
-            {/* Corner label */}
             <div className="pointer-events-none absolute bottom-5 left-5 bg-[#171715]/90 px-4 py-3">
               <p className="font-sans text-[9px] font-bold uppercase tracking-[0.2em] text-white/45">
                 The Ridge Realty Group

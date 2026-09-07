@@ -24,7 +24,6 @@ export default function FramedParallaxImage({
 
   return (
     <div className="group relative">
-      {/* Matte Gallery Border Envelope */}
       <div
         ref={ref}
         className={`relative overflow-hidden border border-[#171715]/20 bg-[#e8e3d5] p-3 sm:p-4 shadow-sm ${className}`}
@@ -37,7 +36,6 @@ export default function FramedParallaxImage({
             className="absolute -top-[15%] left-0 h-[130%] w-full object-cover contrast-[1.12] saturate-[1.08] transition-transform duration-700 ease-out group-hover:scale-105"
           />
 
-          {/* Film Grain Texture Mask - Masks low resolution */}
           <div
             className="pointer-events-none absolute inset-0 opacity-[0.18] mix-blend-overlay"
             style={{
@@ -45,12 +43,10 @@ export default function FramedParallaxImage({
             }}
           />
 
-          {/* Vignette Depth Gradient */}
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 mix-blend-multiply" />
         </div>
       </div>
 
-      {/* Under-Frame Editorial Details */}
       <div className="mt-2.5 flex items-center justify-between px-1 font-sans text-[10px] uppercase tracking-[0.2em] text-[#171715]/60">
         <span>{number} / {caption}</span>
         <span className="h-px w-6 bg-[#171715]/20" />

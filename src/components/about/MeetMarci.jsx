@@ -13,7 +13,6 @@ export default function MeetMarci() {
     offset: ["start end", "end start"],
   });
 
-  // Smooth parallax adjustments
   const imageY = useTransform(scrollYProgress, [0, 1], [40, -40]);
   const titleY = useTransform(scrollYProgress, [0, 1], [20, -20]);
   const backgroundX = useTransform(
@@ -69,7 +68,6 @@ export default function MeetMarci() {
         {/* Main Content Layout */}
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-14 lg:items-center">
 
-          {/* Agent Portrait Container */}
           <div className="relative lg:col-span-6">
             <div className="relative overflow-hidden border border-[#f5f1e8]/15 bg-[#1f1e1b]">
               <motion.div
@@ -83,7 +81,6 @@ export default function MeetMarci() {
                 />
               </motion.div>
 
-              {/* Badges without fabricated numbers */}
               <div className="absolute left-6 top-6 border border-[#f5f1e8]/15 bg-[#171715]/90 px-4 py-2 backdrop-blur-md">
                 <span className="font-sans text-[9px] font-bold uppercase tracking-[0.2em] text-[#f5f1e8]">
                   Licensed NV Broker
@@ -111,7 +108,6 @@ export default function MeetMarci() {
             </div>
           </div>
 
-          {/* Narrative & Value Proposition */}
           <div className="flex flex-col justify-center lg:col-span-6">
             <motion.div style={{ y: titleY }}>
               <motion.span
@@ -149,7 +145,6 @@ export default function MeetMarci() {
                 </p>
               </motion.div>
 
-              {/* Real Estate Services Matrix */}
               <div className="mt-8 grid grid-cols-2 gap-3 border-t border-[#f5f1e8]/15 pt-6">
                 {[
                   "Residential Homes",
@@ -166,7 +161,6 @@ export default function MeetMarci() {
                 ))}
               </div>
 
-              {/* Actions */}
               <div className="mt-10 flex flex-wrap items-center gap-6">
                 <a
                   href="#contact"
@@ -190,7 +184,6 @@ export default function MeetMarci() {
 
         </div>
 
-        {/* Bottom Key Performance Metrics (Strictly factual qualities) */}
         <div className="mt-20 grid border-t border-[#f5f1e8]/15 sm:grid-cols-3">
           <Fact
             number="01"

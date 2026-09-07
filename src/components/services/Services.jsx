@@ -192,7 +192,6 @@ function ServiceRow({ service, index }) {
 
           </div>
 
-          {/* Bottom number */}
           <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-[#171715]/35">
             0{index + 1} / 03
           </span>
@@ -236,13 +235,11 @@ function ServiceRow({ service, index }) {
             }}
           />
 
-          {/* Subtle edge */}
           <div className="pointer-events-none absolute inset-0 border border-black/10" />
         </motion.div>
 
       </div>
 
-      {/* Divider */}
       <div className="mx-auto max-w-[1500px] border-t border-[#171715]/15" />
     </article>
   );
