@@ -62,7 +62,7 @@ export default function PhotoStory() {
 
   return (
     <section
-      id="about-pahrump"
+      id="properties"
       className="relative overflow-hidden bg-[#f5f1e8] text-[#171715]"
     >
       {/* Intro Header */}

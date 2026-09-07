@@ -7,7 +7,7 @@ const ease = [0.16, 1, 0.3, 1];
 export default function BuySell() {
   return (
     <section
-      id="properties"
+      id="buy-sell"
       className="bg-[#171715] text-[#f5f1e8]"
     >
       {/* Intro Header */}
