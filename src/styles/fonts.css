@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@500;700&display=swap');
+
+@font-face {
+  font-family: "Aovel Sans";
+  src: url("../assets/fonts/AovelSans-nXoO.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aovel Sans";
+  src: url("../assets/fonts/AovelSansLight-BYlw.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aovel Sans";
+  src: url("../assets/fonts/AovelSansBold-RdPE.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aovel Sans";
+  src: url("../assets/fonts/AovelSansBlack-1Zrv.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Angelina Serif";
+  src: url("../assets/fonts/AngelinaSerif-nAGjM.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

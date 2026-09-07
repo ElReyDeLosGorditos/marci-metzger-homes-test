@@ -1,0 +1,40 @@
+@import "./styles/fonts.css";
+@import "tailwindcss";
+
+/* 1. Register custom font families in Tailwind v4 */
+@theme {
+  /* Strong, architectural heading font */
+  --font-serif: "Space Grotesk", sans-serif; 
+  /* Ultra-readable, modern body & UI font */
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+:root {
+  font-family: var(--font-sans);
+  color: #ffffff;
+  background-color: #121212;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-dark);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Optional: Default serif styles for headers */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+}
