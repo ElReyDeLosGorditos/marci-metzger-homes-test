@@ -15,6 +15,25 @@ export default function Navbar() {
 
   const closeMenu = () => setIsOpen(false);
 
+  const handleNavigation = (e, href) => {
+    e.preventDefault();
+
+    closeMenu();
+
+    const element = document.querySelector(href);
+
+    if (!element) return;
+
+    setTimeout(() => {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+
+      window.history.replaceState(null, "", href);
+    }, 100);
+  };
+
   return (
     <motion.header
       initial={{ y: -80, opacity: 0 }}
@@ -139,38 +158,38 @@ export default function Navbar() {
 
                 <div className="flex flex-col">
 
-                  {links.map((link, index) => (
-                    <motion.a
-                      key={link.label}
-                      href={link.href}
-                      onClick={closeMenu}
-                      initial={{ opacity: 0, x: -15 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{
-                        duration: 0.3,
-                        delay: index * 0.04,
-                      }}
-                      className="flex items-center justify-between border-b border-[#24231f]/10 py-4 font-sans text-xs font-bold uppercase tracking-[0.2em] text-[#24231f]"
-                    >
-                      {link.label}
+                {links.map((link, index) => (
+                  <motion.a
+                    key={link.label}
+                    href={link.href}
+                    onClick={(e) => handleNavigation(e, link.href)}
+                    initial={{ opacity: 0, x: -15 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{
+                      duration: 0.3,
+                      delay: index * 0.04,
+                    }}
+                    className="flex items-center justify-between border-b border-[#24231f]/10 py-4 font-sans text-xs font-bold uppercase tracking-[0.2em] text-[#24231f]"
+                  >
+                    {link.label}
 
-                      <span className="text-[#24231f]/30">
-                        →
-                      </span>
-                    </motion.a>
-                  ))}
+                    <span className="text-[#24231f]/30">
+                      →
+                    </span>
+                  </motion.a>
+                ))}
 
                 </div>
 
                 <div className="mt-6">
 
-                  <a
-                    href="#contact"
-                    onClick={closeMenu}
-                    className="block bg-[#24231f] py-4 text-center font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-[#f5f1e8]"
-                  >
-                    Let's Talk
-                  </a>
+                <a
+                  href="#contact"
+                  onClick={(e) => handleNavigation(e, "#contact")}
+                  className="block bg-[#24231f] py-4 text-center font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-[#f5f1e8]"
+                >
+                  Let's Talk
+                </a>
 
                   <a
                     href="tel:2069196886"
