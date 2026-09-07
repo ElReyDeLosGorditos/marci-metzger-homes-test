@@ -8,6 +8,17 @@ The goal was not to reproduce the existing website, but to reinterpret its conte
 
 ---
 
+## Tech Stack
+
+| Layer | Core Technologies |
+| :--- | :--- |
+| **Framework & Core** | React • JavaScript (ES6+) |
+| **Build Tooling** | Vite |
+| **Styling** | Tailwind CSS • Custom CSS Variables • HTML5 |
+| **Animation Engine** | Framer Motion |
+
+---
+
 ## Design Direction
 
 The redesign takes a more architectural approach to real estate design.
@@ -166,7 +177,7 @@ Visitors first understand what the company does before being asked to connect wi
 
 This creates a more natural progression:
 
-$$\text{Brand} \longrightarrow \text{Expertise} \longrightarrow \text{Services} \longrightarrow \text{Person}$$
+**Brand → Expertise → Services → Person**
 
 The section helps establish trust without interrupting the earlier property-focused experience.
 
